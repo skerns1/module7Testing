@@ -163,7 +163,7 @@ public class TextAnalyzer extends Application {
         } 
     }//end isValidURL
 	
-
+	
 	//Read selected file name as a directory for text file and output to text area
 	public void TextReader(TextArea output, String filename) {
 		File directory = new File(new File("").getAbsolutePath()+"//Word Occurances//");
@@ -222,7 +222,7 @@ public class TextAnalyzer extends Application {
 	}//end UpdateFileList
 	
 	//Map the word count to unsorted map
-	public static void UnsortedWordCount (String[] SplitText, Map<String, Integer> UnsortedMap) {
+	public void UnsortedWordCount (String[] SplitText, Map<String, Integer> UnsortedMap) {
 		//Check if word exists in map and increase count, if not add word to unsorted map
 		int count = 0;
 		for (String word:SplitText) { 
